@@ -1,0 +1,167 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	min-height:100vh;
+	background-image: linear-gradient(-45deg, #D9E2DC 20%, #454544 50%);
+	display: flex;
+	justify-content: center;
+}
+
+.parentBox {
+	width: 800px;
+	height: 500px;
+	margin-top: 70px;
+	
+	display: grid;
+	grid-template-rows: 1fr 30px;
+	grid-template-columns: 1fr;
+}
+
+	.parentB1 {
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+
+	.layer1 {
+		width: 50%;
+		height: 100%;
+		left: 0px;
+		position: absolute;
+		
+		z-index: 1;
+		background: transparent;
+	}
+
+	.layer2 {
+		width: 50%;
+		height: 100%;
+		right: 0px;
+		position: absolute;
+		
+		z-index: 1;
+		background: transparent;
+	}
+
+		.parentB1 .boxOne {
+					
+					width: 50%;
+					height: 80%;
+					margin: 5% 0px 0px 0px;
+					border-radius: 10px;	
+					background: #4976DD;
+					z-index: 2;
+					position: absolute;
+					box-shadow: 10px 10px 30px rgba(0,0,0,0.7),
+							   -10px -10px 30px rgba(0,0,0,0.7);
+
+					transition: 1s;
+				}
+
+			.parentB1 .boxOne img {
+
+						width: 100%;
+						height: 100%;
+						border-radius: 10px;    			
+					}
+
+		.parentB1 .boxTwo {
+					
+					width: 35%;
+					height: 65%;
+					margin: 10% 0px 0px 65%;
+					z-index: -2;
+					position: absolute;
+					transition: 1s;
+				}
+
+			.parentB1 .boxTwo img {
+						width: 100%;
+						height: 100%;
+						opacity:0.8;
+						border-radius: 2px;
+					}
+
+
+		.parentB1 .boxThree {
+					width: 35%;
+					height: 65%;
+					margin: 10% 0px 0px 65%;
+					border-radius: 2px;
+					z-index: -5;
+					position: absolute;
+					transition: 1s;
+				}
+
+			.parentB1 .boxThree img {
+						width: 100%;
+						height: 100%;
+						opacity:0.0;
+						border-radius: 2px;
+					}
+
+		.parentB1 .boxFour {
+					width: 35%;
+					height: 65%;
+					margin: 10% 65% 0px 0px;
+					border-radius: 2px;
+					z-index: -8;
+					position: absolute;
+					transition: 1s;
+				}
+
+			.parentB1 .boxFour img {
+						width: 100%;
+						height: 100%;
+						opacity:0.0;
+						border-radius: 2px;
+					}
+
+		.parentB1 .boxFive {
+					width: 35%;
+					height: 65%;
+					margin: 10% 65% 0px 0px;
+					z-index: -2;
+					position: absolute;
+    				transition: 1s;
+				}
+
+			.parentB1 .boxFive img {
+						width: 100%;
+						height: 100%;
+						opacity:0.8;
+						border-radius: 2px;
+					}
+
+.signalBox {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+	.signalBox li {
+		list-style: none;
+		display: inline-block; 
+		border-radius: 45% 10%;
+		z-index: 100;
+	}
+
+	.signalOne {
+		background: #DDE3DD;
+		width: 25px;
+		height: 25px;
+		box-shadow: 2px 2px 15px rgba(0,0,0,0.7);
+		margin: 0px 0px 0px 20px;
+		transition: 0.3s;
+	} 
+	
+	.signalTwo {
+		background: #020;
+		width: 25px;
+		height: 25px;
+		margin: 2px 0px 0px 20px;
+	} 
+	
